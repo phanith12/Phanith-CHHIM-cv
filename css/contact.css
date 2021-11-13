@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap');
+*{
+    /* background:#16a085; */
+    font-family: 'Lora', serif;
+    margin: 0%;
+    padding: 0%;
+}
+#check,label{
+    display: none;
+}
+nav {
+    background: rgb(80, 80, 80);
+}
+#check, label {
+    display: none;
+}
+ul {
+    display: flex;
+}
+ul li {
+    list-style: none;
+    padding: 15px;
+}
+ul .active {
+    background: #e67e22;
+}
+ul a {
+    color: #fff;
+    text-decoration: none;
+}
+/* =========================== */
+.icon{
+    padding: 20px;
+    margin-top: 20px;
+}
+.icon i{
+    padding: 20px;
+}
+.ft-icon{
+    display: flex;
+    justify-content: center;
+}
+.ft-icon img{
+    padding: 20px;
+}
+footer{
+   text-align: center;
+   
+    background: rgb(65, 65, 65);
+    margin: 0%;
+    padding: 3px;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    background: rgb(65, 65, 65);
+}
+footer ul li{
+    padding: 20px;
+    list-style: none;
+}
+footer ul li a{
+    text-transform: uppercase;
+    color: blue;
+}
+@media(max-width:860px){
+    nav {
+        display: none;
+    }
+    label {
+        display: block;
+    }
+    ul {
+        display: block;
+        background: rgb(54, 83, 102);
+        
+    }
+    #check:checked ~ nav{
+        display: block;
+    }
+    footer ul{
+        font-size: 15px;
+    }
+    footer img{
+        width: 30px;
+    }
+    
+}
+@media(max-width:450px){
+    nav {
+        display: none;
+    }
+    label {
+        display: block;
+    }
+    ul {
+        display: block;
+        background: rgb(54, 83, 102);
+       
+        
+    }
+    #check:checked ~ nav{
+        display: block;
+    }
+    .group-wrap{
+        flex-wrap: wrap;
+    }
+    footer ul{
+        font-size: 10px;
+    }
+    footer img{
+        width: 25px;
+    }
+}

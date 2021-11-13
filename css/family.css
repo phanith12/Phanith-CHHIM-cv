@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap');
+body{
+    background:#16a085;
+    font-family: 'Lora', serif;
+    margin: 0%;
+    padding: 0%;
+}
+.fist{
+    background-image: url(/img/family1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+}
+
+#check,label{
+    display: none;
+}
+nav {
+    background: rgb(80, 80, 80);
+}
+#check, label {
+    display: none;
+}
+ul {
+    display: flex;
+}
+ul li {
+    list-style: none;
+    padding: 15px;
+}
+ul .active {
+    background: #e67e22;
+}
+ul a {
+    color: #fff;
+    text-decoration: none;
+}
+/* ============================= */
+.main-card{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.group-card{
+    width: 48%;
+    margin-top: 20px;
+    border: 2px solid #e67e22;
+    background: rgb(80, 80, 80);
+}
+.group-card  .card img{
+    width: 50%;
+    border: 10px solid #e67e22;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+.card-body{
+    padding: 10px;
+}
+h1{
+    text-align: center;
+}
+.color-white{
+    color: white;
+}
+/* ============== */
+.group-card2{
+    width: 48%;
+    margin-top: 20px;
+    border: 2px solid #e67e22;
+    background: rgb(80, 80, 80);
+}
+.group-card2  .card2 img{
+    width: 48%;
+    border: 10px solid #e67e22;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+.card-body2{
+    padding: 10px;
+}
+h1{
+    text-align: center;
+}
+.card-body2:hover{
+   background: rgb(80, 80, 80); 
+}
+.d-flex{
+    display: flex;
+}
+/* =========================== */
+.icon{
+    padding: 20px;
+    margin-top: 20px;
+}
+.icon i{
+    padding: 20px;
+}
+.ft-icon{
+    display: flex;
+    justify-content: center;
+}
+.ft-icon img{
+    padding: 20px;
+}
+footer{
+   text-align: center;
+   
+    background: black;
+    margin: 0%;
+    padding: 3px;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    background: black;
+}
+footer ul li{
+    padding: 20px;
+    list-style: none;
+}
+footer ul li a{
+    text-transform: uppercase;
+    color: blue;
+}
+@media(max-width:860px){
+    nav {
+        display: none;
+    }
+    label {
+        display: block;
+    }
+    ul {
+        display: block;
+        background: rgb(54, 83, 102);
+        
+    }
+    #check:checked ~ nav{
+        display: block;
+    }
+    footer ul{
+        font-size: 15px;
+    }
+    footer img{
+        width: 30px;
+    }
+    .group-box-wrap{
+        flex-wrap: wrap;
+       
+    }
+    .fist{
+        background-image: url(/img/family1.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 70vh;
+    }
+    .card-body{
+        width: 80%;
+
+    }
+}
+@media(max-width:450px){
+    nav {
+        display: none;
+    }
+    label {
+        display: block;
+    }
+    ul {
+        display: block;
+        background: rgb(54, 83, 102);
+       
+        
+    }
+    #check:checked ~ nav{
+        display: block;
+    }
+    .group-wrap{
+        flex-wrap: wrap;
+    }
+    footer ul{
+        font-size: 10px;
+    }
+    footer img{
+        width: 25px;
+    }
+    .fist{
+        background-image: url(/img/family1.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 50vh;
+    }
+    .card-body{
+        width: 70%;
+
+    }
+    .group-box-wrap{
+        flex-wrap: wrap;
+       
+    }
+    .group-card img{
+        margin-right: 40px;
+    }
+    .group-card2 img{
+        margin-right: 40px;
+    }
+
+}
