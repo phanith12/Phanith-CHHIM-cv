@@ -60,6 +60,7 @@ ul a {
 }
 h1{
     text-align: center;
+   
 }
 .color-white{
     color: white;
@@ -147,8 +148,9 @@ footer ul li a{
     }
     .group-box-wrap{
         flex-wrap: wrap;
-       
+        display: block;
     }
+  
     .fist{
         background-image: url(/img/family1.jpg);
         background-size: cover;
@@ -158,9 +160,13 @@ footer ul li a{
         height: 70vh;
     }
     .card-body{
-        width: 80%;
+        width: 100%;
 
     }
+    .width{
+        width: 100%;
+    }
+    
 }
 @media(max-width:450px){
     nav {
@@ -178,9 +184,7 @@ footer ul li a{
     #check:checked ~ nav{
         display: block;
     }
-    .group-wrap{
-        flex-wrap: wrap;
-    }
+
     footer ul{
         font-size: 10px;
     }
@@ -196,7 +200,7 @@ footer ul li a{
         height: 50vh;
     }
     .card-body{
-        width: 70%;
+        width: 100%;
 
     }
     .group-box-wrap{
@@ -208,6 +212,9 @@ footer ul li a{
     }
     .group-card2 img{
         margin-right: 40px;
+    }
+    .width{
+        width: 100%;
     }
 
 }
