@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap');
 *{
-    /* background:#16a085; */
     font-family: 'Lora', serif;
     margin: 0%;
     padding: 0%;
+ 
 }
+body{
+    background:#16a085;
+}
+.fist{
+    background-image: url(/img/bg\ \(2\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+}
+
 #check,label{
     display: none;
 }
@@ -63,6 +75,91 @@ footer ul li a{
     text-transform: uppercase;
     color: blue;
 }
+/* ======================== */
+.header{
+    margin-top: 90px;
+    color:#004335;
+    text-align: center;
+    font-size: 20px;
+}
+/* .container{
+    display: flex;
+    justify-content: space-between;
+} */
+/* .contain-left{
+    width: 20%;
+} */
+.contain-right{
+    width: 70%;
+    
+}
+.block{
+    border-radius: 30px;
+    background: rgb(65, 65, 65);
+    padding: 10px;
+    margin: 20px;
+    word-break: break-all;
+}
+.block h3,
+a{
+    margin-left: 70px;
+    color: white;
+}
+.d-flex{
+    display: flex;
+}
+form{
+    width: 70%;
+    word-break: break-all;
+    background:#e67e22 ;
+    padding: 100px;
+    margin: 20px;
+   
+}
+input[type="text"]{
+    width: 300px;
+    padding: 10px;
+    margin: 8px;
+    background: rgb(65, 65, 65);
+    box-sizing: border-box;
+}
+::placeholder{
+    color: white;
+}
+.white{
+    color: white;
+}
+.padding{
+    padding: 10px;
+}
+.margin{
+    margin-left: 10px;
+}
+.btn{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+input[type="submit"]{
+    padding: 10px;
+    width: 160px;
+    background:#16a085;
+    color: white;
+}
+input[type="submit"]:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.map iframe {
+    width: 100%;
+    box-sizing: border-box;
+
+}
+.box-sizing{
+    box-sizing: border-box;
+}
+/* ============================ */
+
 @media(max-width:860px){
     nav {
         display: none;
@@ -84,7 +181,12 @@ footer ul li a{
     footer img{
         width: 30px;
     }
-    
+    form{
+        flex-wrap: wrap;
+    }
+    .group-wrap{
+        flex-wrap: wrap;
+    }
 }
 @media(max-width:450px){
     nav {
@@ -110,5 +212,8 @@ footer ul li a{
     }
     footer img{
         width: 25px;
+    }
+    form{
+        flex-wrap: wrap;
     }
 }
