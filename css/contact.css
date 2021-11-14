@@ -198,7 +198,6 @@ input[type="submit"]:hover{
     ul {
         display: block;
         background: rgb(54, 83, 102);
-       
         
     }
     #check:checked ~ nav{
