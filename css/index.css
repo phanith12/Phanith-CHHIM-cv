@@ -128,7 +128,7 @@ h1{
 .pd-20{
     padding: 20px;
 }
-.container{
+/* .container{
     width: 100%;
 }
 .sid-right{
@@ -136,7 +136,7 @@ h1{
 }
 .sid-left{
     width: 40%;
-}
+} */
 .white-color{
     color: white;
 }
@@ -182,14 +182,6 @@ h2{
         flex-wrap: wrap;
         display: block;
     }
-    h2{
-        margin: 30px;
-        padding: 20px;
-        background: #e67e22;
-        width: 200px;
-        color: white;
-        border-radius: 70px 70px;
-    }
 }
 @media(max-width:450px){
     nav {
@@ -229,13 +221,5 @@ h2{
         color: #e67e22;
         text-align: center;
         margin-top: 60px;
-    }
-    h2{
-        margin: 30px;
-        padding: 20px;
-        background: #e67e22;
-        color: white;
-        border-radius: 70px 70px;
-        width: 200px;
     }
 }
