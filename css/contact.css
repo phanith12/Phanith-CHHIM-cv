@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap');
 *{
     font-family: 'Lora', serif;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
  
 }
 body{
@@ -75,6 +75,11 @@ footer ul li a{
     text-transform: uppercase;
     color: blue;
 }
+.contain-left h3,
+a{
+    text-align: center;
+    color: #fff;
+}
 /* ======================== */
 .header{
     margin-top: 90px;
@@ -82,47 +87,58 @@ footer ul li a{
     text-align: center;
     font-size: 20px;
 }
-/* .container{
+.container{
     display: flex;
     justify-content: space-between;
-} */
-/* .contain-left{
-    width: 20%;
-} */
-.contain-right{
-    width: 70%;
+}
+
+.contain-right,
+.contain-left{
+    width: 50%;
     
 }
-.block{
-    border-radius: 30px;
-    background: rgb(65, 65, 65);
-    padding: 10px;
-    margin: 20px;
-    word-break: break-all;
+.contain-left {
+    border-radius: 10px;
+    background:#e67e22 ;
+    margin: 10px auto;
+    padding-bottom: 10px;
 }
-.block h3,
+.box .block{
+    width: 45%;
+    padding: 10px;
+    margin: 10px;
+    background: rgb(65, 65, 65);
+    word-break: break-all;
+    border-radius: 10px;
+}
+/* .block h3,
 a{
     margin-left: 70px;
     color: white;
-}
-.d-flex{
-    display: flex;
-}
+} */
+
 form{
-    width: 70%;
+    width: 95%;
+    margin: 10px auto;
+    padding: 10px;
     word-break: break-all;
     background:#e67e22 ;
-    padding: 100px;
-    margin: 20px;
+    border-radius: 10px;
+}
+.box {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.box input {
+    width: 45%;
+    padding: 10px;
+    margin: 5px;
+    background: rgb(65, 65, 65);
+    border-radius: 10px;
    
 }
-input[type="text"]{
-    width: 300px;
-    padding: 10px;
-    margin: 8px;
-    background: rgb(65, 65, 65);
-    box-sizing: border-box;
-}
+
 ::placeholder{
     color: white;
 }
@@ -150,15 +166,6 @@ input[type="submit"]{
 input[type="submit"]:hover{
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-.map iframe {
-    width: 100%;
-    box-sizing: border-box;
-
-}
-.box-sizing{
-    box-sizing: border-box;
-}
-/* ============================ */
 
 @media(max-width:860px){
     nav {
@@ -181,38 +188,36 @@ input[type="submit"]:hover{
     footer img{
         width: 30px;
     }
-    form{
-        flex-wrap: wrap;
-    }
-    .group-wrap{
-        flex-wrap: wrap;
-    }
+
 }
 @media(max-width:450px){
-    nav {
-        display: none;
-    }
-    label {
-        display: block;
-    }
-    ul {
-        display: block;
-        background: rgb(54, 83, 102);
-        
-    }
-    #check:checked ~ nav{
-        display: block;
-    }
-    .group-wrap{
-        flex-wrap: wrap;
-    }
+    
     footer ul{
         font-size: 10px;
     }
     footer img{
         width: 25px;
     }
-    form{
-        flex-wrap: wrap;
+    .box,
+    .container {
+      display: block;
     }
+    .contain-right,
+    .contain-left {
+        width: 100%;
+        margin: auto;
+    }
+   .box .block{
+       box-sizing: border-box;
+       padding: 10px;
+       margin: 10px auto;
+       width: 90%;
+    }
+    .box input {
+        box-sizing: border-box;
+        padding: 20px;
+        margin: 5px 0px;
+        width: 100%;
+    }
+
 }
