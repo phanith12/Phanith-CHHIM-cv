@@ -39,7 +39,7 @@ ul a {
 }
 .main-contain h1{
  text-align: center;
-margin-top: 300px;
+margin-top: 200px;
 }
 /* ============================= */
 
@@ -79,14 +79,17 @@ footer ul li a{
 /* ============================== */
 .d-flex{
     display: flex;
+    justify-content: space-between;
 }
 .card img{
     width: 300px;
     border: 10px solid #e67e22;
     text-align: center;
 }
-.card{
-  text-align: center;
+.card .img,
+h1{
+  display: flex;
+  justify-content: center;
 }
 .background{
     background: rgb(80, 80, 80);
@@ -100,6 +103,14 @@ footer ul li a{
 .pd-10{
     padding: 10px;
 }
+.margit-10{
+    margin: 10px;
+}
+.card-body:hover{
+    background:#16a085;
+}
+
+
 @media(max-width:860px){
     nav {
         display: none;
