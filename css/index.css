@@ -172,17 +172,23 @@ h2{
         width: 30px;
     }  
     .sid-left img{
-        width: 600px;
         align-items: center;
     }
     .sid-right{
         flex-wrap: wrap;
         display: block;
-        width: 100%;
     }
     .container{
         flex-wrap: wrap;
         display: block;
+    }
+    h2{
+        margin: 30px;
+        padding: 20px;
+        background: #e67e22;
+        width: 200px;
+        color: white;
+        border-radius: 70px 70px;
     }
 }
 @media(max-width:450px){
@@ -216,12 +222,20 @@ h2{
         background-position: center;
         background-repeat: no-repeat;
         height: 70vh;
-        width: 100%;
+        display: block;
     }
     h1{
         font-size: 30px;
         color: #e67e22;
         text-align: center;
         margin-top: 60px;
+    }
+    h2{
+        margin: 30px;
+        padding: 20px;
+        background: #e67e22;
+        color: white;
+        border-radius: 70px 70px;
+        width: 200px;
     }
 }
