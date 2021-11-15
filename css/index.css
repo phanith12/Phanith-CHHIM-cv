@@ -212,21 +212,23 @@ h2{
   
     .sid-right{
         flex-wrap: wrap;
-        display: block;
+        /* display: block; */
+        width: 100%;
     }
     .container{
         flex-wrap: wrap;
         display: block;
     }
-    .sid-left img{
-        width: 100%;
-    }
-    .sid-right{
-        width: 100%;
-
-    }
     .sid-left{
         width: 100%;
+    }
+    .sid-left img{
+        width: 95%;
+        margin: 5px 10px;
+    }
+    .sid-right{
+        width: 95%;
+        margin: 5px 10px;
     }
 }
 @media(max-width:450px){
@@ -269,9 +271,11 @@ h2{
         margin-top: 60px;
     }
     .sid-left img{
-        width: 100%;
+        width: 95%;
+        margin: 5px 10px;
     }
     .sid-right{
-        width: 100%;
+        width: 95%;
+        margin: 5px 10px;
     }
 }
