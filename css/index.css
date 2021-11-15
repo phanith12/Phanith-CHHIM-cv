@@ -163,7 +163,7 @@ h1{
 .pd-20{
     padding: 20px;
 }
-/* .container{
+.container{
     width: 100%;
 }
 .sid-right{
@@ -171,7 +171,10 @@ h1{
 }
 .sid-left{
     width: 40%;
-} */
+}
+.sid-left img{
+    width: 100%;
+}
 .white-color{
     color: white;
 }
@@ -206,9 +209,7 @@ h2{
     footer img{
         width: 30px;
     }  
-    .sid-left img{
-        align-items: center;
-    }
+  
     .sid-right{
         flex-wrap: wrap;
         display: block;
@@ -221,6 +222,10 @@ h2{
         width: 100%;
     }
     .sid-right{
+        width: 100%;
+
+    }
+    .sid-left{
         width: 100%;
     }
 }
