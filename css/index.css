@@ -218,10 +218,10 @@ h2{
         display: block;
     }
     .sid-left img{
-        width: 50%;
+        width: 100%;
     }
     .sid-right{
-        width: 50%;
+        width: 100%;
     }
 }
 @media(max-width:450px){
@@ -264,6 +264,9 @@ h2{
         margin-top: 60px;
     }
     .sid-left img{
-        width: 60%;
+        width: 100%;
+    }
+    .sid-right{
+        width: 100%;
     }
 }
