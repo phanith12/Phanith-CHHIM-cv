@@ -22,6 +22,8 @@ body{
 }
 nav {
     background: rgb(80, 80, 80);
+    position: sticky;
+    top: 0%1;
 }
 #check, label {
     display: none;
@@ -79,6 +81,11 @@ footer ul li a{
 a{
     text-align: center;
     color: #fff;
+}
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* ======================== */
 .header{
@@ -187,6 +194,27 @@ input[type="submit"]:hover{
     }
     footer img{
         width: 30px;
+    }
+    .box,
+    .container {
+      display: block;
+    }
+    .contain-right,
+    .contain-left {
+        width: 100%;
+        margin: auto;
+    }
+   .box .block{
+       box-sizing: border-box;
+       padding: 10px;
+       margin: 10px auto;
+       width: 90%;
+    }
+    .box input {
+        box-sizing: border-box;
+        padding: 20px;
+        margin: 5px 0px;
+        width: 100%;
     }
 
 }
